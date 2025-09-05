@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EconoTrack - Currency & GDP Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .features {
+            padding: 4rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 340px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .currency-header {
+            background-color: #27ae60;
+            color: white;
+        }
+        
+        .gdp-header {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .feature-icon {
+            font-size: 5rem;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .card-content p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .btn-currency {
+            background-color: #27ae60;
+        }
+        
+        .btn-currency:hover {
+            background-color: #219653;
+        }
+        
+        .btn-gdp {
+            background-color: #e74c3c;
+        }
+        
+        .btn-gdp:hover {
+            background-color: #c0392b;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feature-card {
+                width: 100%;
+                max-width: 340px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>CURRENCY CONVERTER&GDP GROWTH DISPLAY</h2>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Global Economic Data at Your Fingertips</h1>
+            <p>Access real-time currency conversion and explore GDP growth data for countries worldwide</p>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature-card">
+            <div class="card-header currency-header">
+                <div class="feature-icon">💱</div>
+            </div>
+            <div class="card-content">
+                <h3>Currency Converter</h3>
+                <p>Convert between 170+ global currencies with real-time exchange rates. Perfect for travelers, businesses, and financial analysis.</p>
+                <a href="convert.html" class="btn btn-currency">Convert Currency</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 EconoTrack. All rights reserved.</p>
+            <p>Data provided by reliable financial sources</p>
+        </div>
+    </footer>
+</body>
+</html>
